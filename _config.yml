@@ -8,8 +8,8 @@ relative_permalinks: true
 
 # Setup
 title:            The Wolf Report
-tagline:          ''
-description:      ''
+tagline:          ' '
+description:      ' '
 url:              http://michael-wolfenden.github.io
 baseurl:          /
 
