@@ -426,3 +426,12 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+.sidebar-links {
+  padding-left: 0;
+}
+
+.sidebar-links li {
+  display: inline-block;
+  width: 50px;
+}
