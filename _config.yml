@@ -11,6 +11,7 @@ tagline:          ' '
 description:      ' '
 url:              http://michael-wolfenden.github.io
 baseurl:          /
+timezone:         Australia/Brisbane
 
 author:
   name:           'Michael Wolfenden'
