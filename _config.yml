@@ -10,7 +10,7 @@ title:            The Wolf Report
 tagline:          ' '
 description:      ' '
 url:              http://michael-wolfenden.github.io
-baseurl:          /
+baseurl:          
 timezone:         Australia/Brisbane
 
 author:
