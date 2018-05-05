@@ -1,26 +1,38 @@
 # Dependencies
-highlighter:      rouge
 markdown:         kramdown
-
-# Permalinks
-permalink:        pretty
+highlighter:      rouge
 
 # Setup
-title:            The Wolf Report
-tagline:          ' '
-description:      ' '
-url:              http://michael-wolfenden.github.io
-baseurl:          
-timezone:         Australia/Brisbane
+title:            'The Wolf Report'
+tagline:          ''
+description:      'Handcrafted artisan links by <a href="https://github.com/michael-wolfenden/">Michael Wolfenden</a>'
+url:              https://michael-wolfenden.github.io
+baseurl:          # the optional subpath of your site, e.g. "/blog"
+                  # NB: This applies to all pages in your Jekyll site.
+                  # If you want to move just the blog index pages but keep
+                  # other pages at root, see the paginate_path and
+                  # sidebar_blog_link below.
 
 author:
   name:           'Michael Wolfenden'
-  url:            https://twitter.com/m_wolfenden
+  url:            https://github.com/michael-wolfenden
 
 paginate:         5
+# paginate_path:    '/page:num'
+                    # Or '/blog/page:num' if you want to move your index pages
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
 
 # Custom vars
-version:          2.1.0
+sidebar_home_link:  false
+
+google_analytics: UA-61219823-1
 
 github:
-  repo:           https://github.com/michael-wolfenden/michael-wolfenden.github.io
+  repo: https://github.com/michael-wolfenden/
+
+feed:
+  path: atom.xml
