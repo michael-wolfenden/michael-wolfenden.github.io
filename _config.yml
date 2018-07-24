@@ -28,7 +28,8 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-
+  - jekyll-algolia
+  
 # Custom vars
 sidebar_home_link:  false
 
@@ -39,3 +40,7 @@ github:
 
 feed:
   path: atom.xml
+  
+algolia:
+  application_id: 'THE WOLF REPORT'
+  index_name:     jekyll
