@@ -5,6 +5,7 @@ cache: bundler
 before_install:
   - gem install bundler
 script:
+  - bundle exec jekyll build --trace
   - bundle exec jekyll algolia
 branches:
   only:
