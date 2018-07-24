@@ -42,6 +42,6 @@ feed:
   path: atom.xml
   
 algolia:
-  application_id:      'THE WOLF REPORT'
-  index_name:          'jekyll'
-  search_only_api_key: '0e3cfa04f899b670107857e7c965f5c5'
+  application_id: 'THE WOLF REPORT'
+  index_name: jekyll
+  search_only_api_key: 0e3cfa04f899b670107857e7c965f5c5
