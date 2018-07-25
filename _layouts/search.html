@@ -3,8 +3,64 @@ layout: default
 ---
 
 <header>
-  <h1 class="page-title"><label for="search-bar">{{ page.title }}</label></h1>
+    <h1 class="page-title">
+        <label for="search-bar">Search</label>
+    </h1>
 </header>
 <div class="content">
-  {% include search-form.html %}
+    <div class="search">
+        <input id="search-box" />
+        <div id="search-hits" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+    <style>
+        .ais-search-box {
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .ais-search-box--input {
+            padding: 1em 3em !important;
+        }
+
+        .post-snippet .ais-Highlight {
+            background: #ff0;
+            color: #000;
+            font-style: normal;
+        }
+    </style>
+
+    <script>
+        const search = instantsearch({
+            appId: '{{ site.algolia.application_id }}',
+            apiKey: '{{ site.algolia.search_only_api_key }}',
+            indexName: '{{ site.algolia.index_name }}'
+        });
+
+        search.addWidget(
+            instantsearch.widgets.searchBox({
+                container: '#search-box',
+                placeholder: 'Search posts...',
+                poweredBy: true
+            })
+        );
+
+        search.addWidget(
+            instantsearch.widgets.hits({
+                container: '#search-hits',
+                templates: {
+                    item: function (hit) {
+                        return '<div class="post-item">' +
+                            '<div class="post-snippet">' + hit._highlightResult.html.value + '</div>' +
+                            '</div>'
+                    }
+                }
+            })
+        );
+
+        search.start();
+    </script>
 </div>
