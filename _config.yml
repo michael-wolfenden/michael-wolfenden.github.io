@@ -45,3 +45,4 @@ algolia:
   application_id: F8F81NE13K
   index_name: jekyll
   search_only_api_key: 0e3cfa04f899b670107857e7c965f5c5
+  nodes_to_index: li
