@@ -6,8 +6,7 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            'The Wolf Report'
-tagline:          ''
+title:            'The Wolf Report 🐺'
 description:      'Handcrafted artisan links by <a href="https://github.com/michael-wolfenden/">Michael Wolfenden</a>'
 url:              https://michael-wolfenden.github.io
 baseurl:          # the optional subpath of your site, e.g. "/blog"
