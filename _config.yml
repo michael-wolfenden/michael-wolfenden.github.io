@@ -35,9 +35,6 @@ sidebar_home_link:  false
 
 google_analytics: UA-61219823-1
 
-github:
-  repo: https://github.com/michael-wolfenden/
-
 feed:
   path: atom.xml
   
