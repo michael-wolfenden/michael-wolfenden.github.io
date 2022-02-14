@@ -10,7 +10,6 @@ permalink:        pretty
 title:            'The Wolf Report 🐺'
 description:      'Handcrafted artisan links by <a href="https://github.com/michael-wolfenden/">Michael Wolfenden</a>'
 url:              https://michael-wolfenden.github.io
-domain:           'michael-wolfenden.github.io'
 future:           true
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
@@ -45,3 +44,7 @@ algolia:
   index_name: jekyll
   search_only_api_key: 0e3cfa04f899b670107857e7c965f5c5
   nodes_to_index: li
+
+social:
+  description: 'Handcrafted artisan links by Michael Wolfenden'
+  domain: 'michael-wolfenden.github.io'
