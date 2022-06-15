@@ -44,3 +44,7 @@ algolia:
   index_name: jekyll
   search_only_api_key: 0e3cfa04f899b670107857e7c965f5c5
   nodes_to_index: li
+
+social:
+  description: 'Handcrafted artisan links by Michael Wolfenden'
+  domain: 'michael-wolfenden.github.io'
